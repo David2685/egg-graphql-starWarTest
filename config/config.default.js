@@ -30,6 +30,13 @@ module.exports = appInfo => {
     onPreGraphiQL: function* (ctx) {},
   }
 
+  //security
+  config.security = {
+    csrf:{
+      ignore:ctx => true
+    }
+  }
+
   // add your middleware config here
   config.middleware = ['graphql'];
 
