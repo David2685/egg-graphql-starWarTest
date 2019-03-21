@@ -6,4 +6,8 @@ module.exports = {
   // static: {
   //   enable: true,
   // }
+  graphql: {
+  	enable: true,
+  	package: 'egg-graphql'
+  }
 };
